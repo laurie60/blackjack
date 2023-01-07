@@ -1,38 +1,9 @@
 import React from "react";
 
 function Card(props) {
-  const {
-    card,
-    front = true,
-    back,
-    Component,
-    height,
-    style = {},
-    className = "",
-  } = props;
-  style.height = height;
+  const { card } = props;
 
-  if (back) {
-    return (
-      <img
-        src={b}
-        className={`react-playing-card react-playing-card__back ${className}`}
-        alt="card-back"
-        style={style}
-      />
-    );
-  }
-
-  if (front) {
-    return (
-      <img
-        src={card}
-        className={`react-playing-card react-playing-card__back ${className}`}
-        alt={card}
-        style={style}
-      />
-    );
-  }
+  return <img src={card} alt={card} className="centered cards" />;
 }
 
 export default Card;
