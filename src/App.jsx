@@ -8,7 +8,7 @@ import winner from "./utils/winner";
 import specials from "./utils/specials";
 
 function App() {
-  const [house, setHouse] = useState([...specials.aA9]);
+  const [house, setHouse] = useState([...specials.kQA]);
 
   const [playerOneHand, setPlayerOneHand] = useState([]);
   const [playerOneScore, setPlayerOneScore] = useState(0);

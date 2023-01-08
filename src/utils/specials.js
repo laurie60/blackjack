@@ -115,8 +115,6 @@ const kA = [
 ];
 
 const kQA = [
-  "Kc",
-  "Qc",
   "9c",
   "2c",
   "Ac",
@@ -155,11 +153,10 @@ const kQA = [
   "Jh",
   "Qh",
   "Kh",
-  "Ah",
 
   "2s",
   "3s",
-  "4s",
+  "As",
   "5s",
   "6s",
   "7s",
@@ -168,8 +165,11 @@ const kQA = [
   "Qs",
   "Ts",
   "Js",
+  "Ah",
   "Ks",
-  "As",
+  "4s",
+  "Kc",
+  "Qc",
 ];
 
 export default { aA9: aA9, kA: kA, kQA: kQA };
