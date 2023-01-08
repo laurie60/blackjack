@@ -1,7 +1,4 @@
 const aA9 = [
-  "Ac",
-  "Ad",
-  "9c",
   "2c",
   "3c",
   "4c",
@@ -52,8 +49,11 @@ const aA9 = [
   "Ts",
   "Js",
   "Qs",
+  "9c",
   "Ks",
   "As",
+  "Ac",
+  "Ad",
 ];
 
 const kA = [
@@ -165,9 +165,9 @@ const kQA = [
   "7s",
   "8s",
   "9s",
+  "Qs",
   "Ts",
   "Js",
-  "Qs",
   "Ks",
   "As",
 ];

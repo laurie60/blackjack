@@ -10,8 +10,6 @@ import specials from "./utils/specials";
 function App() {
   const [house, setHouse] = useState([...specials.aA9]);
 
-  console.log(house);
-
   const [playerOneHand, setPlayerOneHand] = useState([]);
   const [playerOneScore, setPlayerOneScore] = useState(0);
   const [playerTwoHand, setPlayerTwoHand] = useState([]);
