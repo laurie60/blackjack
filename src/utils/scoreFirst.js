@@ -18,7 +18,6 @@ const scoreFirst = ({ house, setHouse, setPlayerHand, setPlayerScore }) => {
   setPlayerScore(points);
   setPlayerHand(drawnCards);
   setHouse(house.slice(0, -2));
-  console.log(points, "points in score first");
 };
 
 export default scoreFirst;

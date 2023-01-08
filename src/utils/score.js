@@ -5,7 +5,6 @@ const score = ({
   setHouse,
   playerHand,
   setPlayerHand,
-  playerScore,
   setPlayerScore,
 }) => {
   const drawnCard = house[house.length - 1];
@@ -13,8 +12,6 @@ const score = ({
   let newScore = 0;
 
   const regex = new RegExp("[0-9]");
-
-  console.log("in scorre!!");
 
   newHand.forEach((card) => {
     if (regex.test(card)) {
@@ -25,8 +22,6 @@ const score = ({
   if (checkSpecials(newHand)) {
     newScore += checkSpecials(newHand);
   }
-
-  console.log(newScore, "points in score");
 
   setPlayerScore(newScore);
 
