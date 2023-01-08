@@ -1,4 +1,4 @@
-# A blackjack game, made with react and [vite](https://vitejs.dev/)
+# A blackjack game, made with [react](https://reactjs.org/) and [vite](https://vitejs.dev/)
 
 This BlackJack game is live and hosted on Netlify:
 [https://lmm-blackjack.netlify.app/](https://lmm-blackjack.netlify.app/)
@@ -37,6 +37,13 @@ Three branches have been provided to test these special combinations, where the 
 - [testing_kA](https://github.com/laurie60/blackjack/tree/testing_kA) 
 - [testing_kQA](https://github.com/laurie60/blackjack/tree/testing_kQA)
 - [testing_aA9](https://github.com/laurie60/blackjack/tree/testing_aA9)
+
+These brances are live and hosted on Netlify:
+- [testing_kA](https://blackjack-test-ka.netlify.app/) 
+- [testing_kQA](https://blackjack-test-kqa.netlify.app/)
+- [testing_aA9](https://blackjack-test-aa9.netlify.app/)
+
+
 
 ### local hosting of test branches
 
