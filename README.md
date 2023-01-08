@@ -62,4 +62,3 @@ npm run dev
 ```
 
 In your browser, navigate to: [http://localhost:8000](http://localhost:5173/) and you should see a version of the website hosted locally. The page will update every time you save a change whist hosting.
-![image](https://user-images.githubusercontent.com/100629314/211221842-454b9287-d039-4a55-905a-84b1dac2de9c.png)
