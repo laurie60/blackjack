@@ -1,5 +1,5 @@
 
-# A Blackjack game, made with [react](https://reactjs.org/) and [vite](https://vitejs.dev/)
+# A two-player Blackjack game, made with [react](https://reactjs.org/) and [vite](https://vitejs.dev/)
 
 This Blackjack game is live and hosted on Netlify:
 [https://lmm-blackjack.netlify.app/](https://lmm-blackjack.netlify.app/)
@@ -28,7 +28,7 @@ In your browser, navigate to: [http://localhost:8000](http://localhost:5173/) an
 
 ## Testing special card combinations
 
-In blackjack, certain card combinations are worth a special number of points, the ones implemented in this project are:
+In Blackjack, certain card combinations are worth a special number of points, the ones implemented in this project are:
 
 - King + Ace = 21 points (kA)
 - King + Queen + Ace = 21 points (kQA)
