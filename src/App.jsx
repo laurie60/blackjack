@@ -20,8 +20,6 @@ function App() {
   const [standTwo, setStandTwo] = useState(false);
   const [turn, setTurn] = useState(-2);
 
-  console.log(specials, "specials!!!!!!");
-
   const flipOneHandleOnClick = () => {
     setFlipPlayerOne(!flipPlayerOne);
   };
@@ -42,8 +40,6 @@ function App() {
   };
 
   const handleOnClick = () => {
-    console.log("in new click");
-
     const scoreVars = { house: house, setHouse: setHouse };
 
     if (turn === 0 || turn === -2) {

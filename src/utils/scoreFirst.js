@@ -3,7 +3,6 @@ import checkSpecials from "./checkSpecials";
 const scoreFirst = ({ house, setHouse, setPlayerHand, setPlayerScore }) => {
   const drawnCards = [house[house.length - 1], house[house.length - 2]];
   let points = 0;
-
   const regex = new RegExp("[0-9]");
 
   drawnCards.forEach((card) => {
@@ -18,7 +17,6 @@ const scoreFirst = ({ house, setHouse, setPlayerHand, setPlayerScore }) => {
   setPlayerScore(points);
   setPlayerHand(drawnCards);
   setHouse(house.slice(0, -2));
-  console.log(points, "points in score first");
 };
 
 export default scoreFirst;

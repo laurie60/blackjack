@@ -14,8 +14,6 @@ const score = ({
 
   const regex = new RegExp("[0-9]");
 
-  console.log("in scorre!!");
-
   newHand.forEach((card) => {
     if (regex.test(card)) {
       newScore += Number(card[0]);
@@ -25,8 +23,6 @@ const score = ({
   if (checkSpecials(newHand)) {
     newScore += checkSpecials(newHand);
   }
-
-  console.log(newScore, "points in score");
 
   setPlayerScore(newScore);
 
