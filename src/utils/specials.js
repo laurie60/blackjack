@@ -23,6 +23,7 @@ const aA9 = [
   "Jd",
   "Qd",
   "Kd",
+  "Ad",
 
   "2h",
   "3h",
@@ -36,7 +37,6 @@ const aA9 = [
   "Jh",
   "Qh",
   "Kh",
-  "Ah",
 
   "2s",
   "3s",
@@ -53,7 +53,7 @@ const aA9 = [
   "Ks",
   "As",
   "Ac",
-  "Ad",
+  "Ah",
 ];
 
 const kA = [
