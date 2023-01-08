@@ -1,9 +1,14 @@
 import React from "react";
 
-function Card(props) {
-  const { card } = props;
+import b from "../images/back.svg";
 
-  return <img src={card} alt={card} className="centered cards" />;
+function Card({ flip, card }) {
+  console.log(flip);
+  if (flip) {
+    return <img src={b} alt="card-back" className="centered cards" />;
+  } else {
+    return <img src={card} alt={card} className="centered cards" />;
+  }
 }
 
 export default Card;

@@ -15,10 +15,10 @@
 }
 
 .split {
-  height: 70%;
+  height: 65%;
   width: 45%;
   position: fixed;
-  z-index: -1;
+  /* z-index: -1; */
   bottom: 2.5vw;
   overflow: hidden;
   padding-top: 20px;
@@ -34,19 +34,13 @@
   background-color: red;
 }
 
-/* .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  /* transform: translate(-50%, -50%); */
-/* text-align: center;
-} */
 /* .centered img {
   width: 150px;
   border-radius: 50%;
 } */
 
 .card-container {
+  z-index: 2;
   display: flex;
   width: 95%;
   align-items: center;
@@ -57,4 +51,40 @@
 
 .cards {
   width: 20%;
+}
+
+.button {
+  cursor: pointer;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 0.5rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease-in-out all;
+  text-transform: capitalize;
+  background: linear-gradient(to right, black, rgb(181, 0, 0));
+  background-size: 20000% 100%;
+  background-position: right bottom;
+  transition: background-position 1s ease-out;
+}
+button:hover {
+  background-position: left bottom;
+  transition: background-position 4s ease-out;
+}
+
+.flip {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.flip-two {
+  background: linear-gradient(to right, rgb(181, 0, 0), black);
+  background-size: 20000% 100%;
+  background-position: right bottom;
+  transition: background-position 1s ease-out;
 }

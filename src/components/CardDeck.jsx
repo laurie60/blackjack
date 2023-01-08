@@ -116,8 +116,8 @@ const cards = {
   As: tcbfAs,
 };
 
-const CardDeck = (props) => {
-  return <Card {...props} card={cards[props.card]} />;
+const CardDeck = ({ card, flip }) => {
+  return <Card flip={flip} card={cards[card]} />;
 };
 
 export default CardDeck;

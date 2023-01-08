@@ -1,9 +1,6 @@
 const scoreFirst = ({ house, setHouse, setPlayerHand, setPlayerScore }) => {
-  console.log("hellooooo");
-  console.log(house, setHouse, setPlayerHand, setPlayerScore);
   const drawnCards = [house[house.length - 1], house[house.length - 2]];
   let points = 0;
-  console.log(drawnCards, "<<<<<<<<<<<<<<<<drawnCards");
 
   const regex = new RegExp("[0-9]");
 
