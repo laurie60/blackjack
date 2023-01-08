@@ -5,20 +5,12 @@ import score from "./utils/score";
 import scoreFirst from "./utils/scoreFirst";
 import winner from "./utils/winner";
 
-import shuffled from "./utils/shuffle";
 import specials from "./utils/specials";
 
 function App() {
-  // to test the special cases un-comment line 9, and comment out line 8 and line 21
-  //to test king+ace un-comment line 17,
-  //to test ace+ace+9, un comment line 18,
-  //to test king+queen+ace, uncomment line 19
+  const [house, setHouse] = useState([...specials.aA9]);
 
-  // const [house, setHouse] = useState([...specials.kA]);
-  // const [house, setHouse] = useState([...specials.aA9]);
-  // const [house, setHouse] = useState([...specials.kQA]);
-
-  const [house, setHouse] = useState([...shuffled]);
+  console.log(house);
 
   const [playerOneHand, setPlayerOneHand] = useState([]);
   const [playerOneScore, setPlayerOneScore] = useState(0);
