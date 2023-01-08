@@ -1,13 +1,25 @@
 import { useState } from "react";
 import "./App.css";
 import CardDeck from "./components/CardDeck";
-import shuffled from "./utils/shuffle";
-import Button from "@mui/material/Button";
 import score from "./utils/score";
-import scoreFirst from "./utils/socreFirst";
+import scoreFirst from "./utils/scoreFirst";
+import winner from "./utils/winner";
+
+import shuffled from "./utils/shuffle";
+import specials from "./utils/specials";
 
 function App() {
+  // to test the special cases un-comment line 9, and comment out line 8 and line 21
+  //to test king+ace un-comment line 17,
+  //to test ace+ace+9, un comment line 18,
+  //to test king+queen+ace, uncomment line 19
+
+  // const [house, setHouse] = useState([...specials.kA]);
+  // const [house, setHouse] = useState([...specials.aA9]);
+  // const [house, setHouse] = useState([...specials.kQA]);
+
   const [house, setHouse] = useState([...shuffled]);
+
   const [playerOneHand, setPlayerOneHand] = useState([]);
   const [playerOneScore, setPlayerOneScore] = useState(0);
   const [playerTwoHand, setPlayerTwoHand] = useState([]);
@@ -16,66 +28,15 @@ function App() {
   const [flipPlayerTwo, setFlipPlayerTwo] = useState(false);
   const [standOne, setStandOne] = useState(false);
   const [standTwo, setStandTwo] = useState(false);
-
   const [turn, setTurn] = useState(-2);
 
-  // const winner = [];
-  const winner = () => {
-    if (standOne && standTwo) {
-      if (playerOneScore > playerTwoScore) {
-        return "player1";
-      } else if (playerOneScore < playerTwoScore) {
-        return "player2";
-      }
-      return "draw";
-    }
-    if (playerOneScore > 20) {
-      return "player2";
-    }
-    if (playerTwoScore > 20) {
-      return "player1";
-    }
-  };
-
-  // playerOneScore > 20 && setWinner("Player2");
-
-  console.log(winner(), "<<<s<<<overwinner>>>>>>>>>>>.");
-
-  // if (stand) {
-  //   console.log("stand!!!!!!");
-  //   console.log(playerTwoScore, playerOneScore);
-  //   if (playerOneScore > playerTwoScore) {
-  //     winner.push("playerOne");
-  //   } else if (playerTwoScore > playerOneScore) {
-  //     // setWinner("playerTwo");
-  //     winner.push("playerTwo");
-  //   }
-  //   // else setWinner("draw");
-  // }
-  // console.log(winner, "winner");
-
-  // if (playerOneScore > 20) {
-  //   console.log("player one lost");
-  //   winner.push("playerTwo");
-  // }
-  // if (playerTwoScore > 20) {
-  //   console.log("player two lost");
-  //   setWinner("playerOne");
-  // }
-
-  // const [first, setFirst] = useState(true);
-
-  console.log(flipPlayerOne);
-
-  // const victory =
+  console.log(specials, "specials!!!!!!");
 
   const flipOneHandleOnClick = () => {
-    console.log("in flip click");
     setFlipPlayerOne(!flipPlayerOne);
   };
 
   const flipTwoHandleOnClick = () => {
-    console.log("in flip click Two");
     setFlipPlayerTwo(!flipPlayerTwo);
   };
 
@@ -125,30 +86,59 @@ function App() {
     }
   };
 
-  console.log(playerOneScore, playerTwoScore, "Player one and two scores");
-  console.log(turn, "<<<<<<<<>>>>>>>>>.turn");
+  const winnerVars = {
+    standOne: standOne,
+    standTwo: standTwo,
+    playerOneScore: playerOneScore,
+    playerTwoScore: playerTwoScore,
+  };
 
   return (
     <div className="App">
-      <div>
-        <h1>BlackJack!</h1>
-        <h3>Hi there</h3>
-      </div>
-
-      <div className="top-buttons">
-        <button onClick={handleOnClick} className="button">
-          {turn === -2 && "First Cards-Player One"}
-          {turn === -1 && "First Cards-Player Two"}
-          {turn === 0 && "New Card Player One"}
-          {turn === 1 && "New Card Player Two"}
-        </button>
-        {turn > -1 && (
-          <button onClick={standHandleOnClick} className="button">
-            {turn === 0 && "Stand-Player One"}
-            {turn === 1 && "Stand-Player Two"}
-          </button>
-        )}
-      </div>
+      {winner(winnerVars) ? (
+        <div>
+          <h1>BlackJack!</h1>
+          <h2>{`Player One has ${playerOneScore} points, Player Two has ${playerTwoScore} points`}</h2>
+          {winner(winnerVars) === "draw" ? (
+            <h2>Its a draw, you are both winners!</h2>
+          ) : (
+            <h2>{`Congratulations ${winner(
+              winnerVars
+            )}, you are the winner!`}</h2>
+          )}
+        </div>
+      ) : (
+        <div>
+          {" "}
+          <h1>BlackJack!</h1>
+          <h3>
+            {" "}
+            {turn === -2 && "Player 1, please take your first two cards"}
+            {turn === -1 && "Player 2, please take your first two cards"}
+            {standOne && "Player One is Standing. "}
+            {standTwo && "Player Two is Standing. "}
+            {turn === 0 && "Player 1, take another card or stand?"}
+            {turn === 1 && "Player 2, take another card or stand?"}
+          </h3>
+          <div className="top-buttons">
+            <button onClick={handleOnClick} className="button">
+              {turn === -2 && "First Cards-Player One"}
+              {turn === -1 && "First Cards-Player Two"}
+              {turn === 0 && "New Card Player One"}
+              {turn === 1 && "New Card Player Two"}
+            </button>
+            {turn > -1 && (
+              <button
+                onClick={standHandleOnClick}
+                className="stand-button button"
+              >
+                {turn === 0 && "Stand-Player One"}
+                {turn === 1 && "Stand-Player Two"}
+              </button>
+            )}
+          </div>
+        </div>
+      )}
       <div className="split left">
         <div className="card-container">
           {playerOneHand.map((card) => {
