@@ -26,7 +26,7 @@ npm run dev
 
 In your browser, navigate to: [http://localhost:8000](http://localhost:5173/) and you should see a version of the website hosted locally. The page will update every time you save a change whist hosting.
 
-## Testing Special card combinations
+## Testing special card combinations
 
 In blackjack, certain card combinations are worth a special number of points, the ones implemented in this project are:
 
@@ -35,9 +35,9 @@ In blackjack, certain card combinations are worth a special number of points, th
 - Ace + Ace + Nine = 21 points (aA9)
 
 Three branches of this repo have been provided to test these special combinations. In these branches, where the cards are in a specific order to guarantee the appearance of the special combinations in the game:
-- King + Ace [testing_kA](https://github.com/laurie60/blackjack/tree/testing_kA) 
-- King + Queen + Ace [testing_kQA](https://github.com/laurie60/blackjack/tree/testing_kQA)
-- Ace + Ace + Nine [testing_aA9](https://github.com/laurie60/blackjack/tree/testing_aA9)
+- King + Ace: [https://github.com/laurie60/blackjack/tree/testing_kA](https://github.com/laurie60/blackjack/tree/testing_kA) 
+- King + Queen + Ace: [(https://github.com/laurie60/blackjack/tree/testing_kQA)](https://github.com/laurie60/blackjack/tree/testing_kQA)
+- Ace + Ace + Nine: [(https://github.com/laurie60/blackjack/tree/testing_aA9)](https://github.com/laurie60/blackjack/tree/testing_aA9)
 
 These branches are live and hosted on Netlify:
 - testing_kA:  [https://blackjack-test-ka.netlify.app/](https://blackjack-test-ka.netlify.app/) 
