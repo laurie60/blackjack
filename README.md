@@ -39,9 +39,9 @@ Three branches have been provided to test these special combinations, where the 
 - [testing_aA9](https://github.com/laurie60/blackjack/tree/testing_aA9)
 
 These brances are live and hosted on Netlify:
-- [testing_kA](https://blackjack-test-ka.netlify.app/) 
-- [testing_kQA](https://blackjack-test-kqa.netlify.app/)
-- [testing_aA9](https://blackjack-test-aa9.netlify.app/)
+- testing_kA  [https://blackjack-test-ka.netlify.app/](https://blackjack-test-ka.netlify.app/) 
+- testing_kQA [https://blackjack-test-kqa.netlify.app/](https://blackjack-test-kqa.netlify.app/)
+- testing_aA9 [https://blackjack-test-aa9.netlify.app/](https://blackjack-test-aa9.netlify.app/)
 
 
 
