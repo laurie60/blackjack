@@ -24,7 +24,7 @@ To run a version of this website on your machine use:
 npm run dev
 ```
 
-In your browser, navigate to: [http://localhost:8000](http://localhost:5173/) and you should see a version of the website hosted locally. The page will update every time you save a change whist hosting.
+In your browser, navigate to: [http://localhost:5173/](http://localhost:5173/) and you should see a version of the website hosted locally. The page will update every time you save a change whist hosting.
 
 ## Testing special card combinations
 
@@ -61,4 +61,4 @@ To run a version of this website on your machine use:
 npm run dev
 ```
 
-In your browser, navigate to: [http://localhost:8000](http://localhost:5173/) and you should see a version of the website hosted locally. The page will update every time you save a change whist hosting.
+In your browser, navigate to: [http://localhost:5173/](http://localhost:5173/) and you should see a version of the website hosted locally. The page will update every time you save a change whist hosting.
