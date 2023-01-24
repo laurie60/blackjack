@@ -28,7 +28,7 @@ import tcbfTd from "../images/2color-bf/TD.svg";
 import tcbfJd from "../images/2color-bf/JD.svg";
 import tcbfQd from "../images/2color-bf/QD.svg";
 import tcbfKd from "../images/2color-bf/KD.svg";
-import tcbfAd from "../images/2color-bf/AD.svg";
+import tcbfAd from "../images/2color-bf/ad.svg";
 
 import tcbf2h from "../images/2color-bf/2H.svg";
 import tcbf3h from "../images/2color-bf/3H.svg";
