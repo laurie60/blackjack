@@ -9,7 +9,6 @@ import shuffled from "./utils/shuffle";
 
 function App() {
   const [house, setHouse] = useState([...shuffled]);
-
   const [playerOneHand, setPlayerOneHand] = useState([]);
   const [playerOneScore, setPlayerOneScore] = useState(0);
   const [playerTwoHand, setPlayerTwoHand] = useState([]);
